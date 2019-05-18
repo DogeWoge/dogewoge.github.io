@@ -2,7 +2,12 @@
 <html>
 <head>
 <style>
-a:link, a:visited {
+<div class="btn-group">
+<button>Apple</button>
+<button>Samsung</button>
+<button>Sony</button>
+</div>
+.btn-group button {
   background-color: #FFFFFF;
   color: blue;
   padding: 15px 25px;
@@ -12,9 +17,13 @@ a:link, a:visited {
   border: 2px solid #e7e7e7;
   margin: 0px;
 }
+.btn-group button:not(:last-child) {
+  border-bottom: none; 
+}
 
-a:hover, a:active {
-  background-color: white;
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 }
 </style>
 </head>
